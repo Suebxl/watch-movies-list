@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  border: none;
+}
+
+body, html {
+  margin: 0;
+  padding: O;
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url("images/image-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0E0E0E;
+  width: 100%;
+  height: 30%;
+  padding: 0 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.watchlist-link{
+  color: #FFFFFF;
+  font-size: 1.1rem;
+}
+
+.search {
+  background-color: white;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+  padding: 0 0 0 16px;
+  margin: -20px 44px 0 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+}
+.search-container{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
+input::placeholder, input{
+  font-weight: 500;
+  font-size: 14px;
+  color:#6B7280;
+
+}
+
+.search-button {
+  padding: 9px 35px;
+  background-color:#F9FAFB;
+  color:#374151;
+  font-weight: 500;
+  font-size: 14px;
+  height: 100%;
+  border-left: 1px solid #D1D5DB;
+  border-radius: 0px 6px 6px 0px;
+  margin: 0;
+}
+
+main {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.exploring-icon {
+  width: 70px;
+  height: 70px;
+
+}
+.start {
+  color: #DFDDDD;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+  line-height: 20px;
+}
